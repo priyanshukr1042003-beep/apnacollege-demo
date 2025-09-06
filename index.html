@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TongueBridge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4">
+    <div class="flex items-center space-x-2">
+      <span class="text-2xl font-bold text-orange-400 drop-shadow-[0_0_10px_rgba(255,165,0,0.8)]">TB</span>
+      <span class="text-xl tracking-wide">TongueBridge</span>
+    </div>
+    <ul class="flex space-x-8 text-gray-300">
+      <li><a href="#" class="hover:text-white">Documentation</a></li>
+      <li><a href="#" class="hover:text-white">Our services</a></li>
+      <li><a href="#" class="hover:text-white">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center text-center px-6 py-20 bg-gradient-to-b from-black to-gray-900">
+    <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-[0_0_25px_rgba(255,255,255,0.9)]">
+      Language Agnostic Chatbot
+    </h1>
+    <h2 class="text-2xl md:text-3xl mt-4 text-purple-400 font-semibold drop-shadow-[0_0_20px_rgba(168,85,247,0.9)]">
+      Your Campus Helpdesk, Simplified
+    </h2>
+
+    <!-- Button scrolls to chatbot -->
+    <a href="#chatbot" 
+       class="mt-8 px-8 py-3 bg-purple-500 rounded-2xl text-lg font-medium 
+              hover:bg-purple-600 transition 
+              shadow-[0_0_25px_rgba(168,85,247,0.9)]">
+      Try our assistent
+    </a>
+
+    <p class="mt-8 max-w-2xl text-gray-300">
+      Got questions about fees, scholarships, or class schedules? Our multilingual chatbot is here
+      24/7 to give you instant answers in Hindi, English, and more. No more long queues — just quick,
+      clear help when you need it.
+    </p>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot" class="flex justify-center py-20 bg-gradient-to-b from-gray-900 to-black">
+    <div class="w-full max-w-2xl bg-gray-950 rounded-2xl p-8 border border-purple-500 
+                shadow-[0_0_35px_rgba(168,85,247,0.7)]">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">Chatbot</h3>
+        <select class="bg-gray-800 text-white px-3 py-1 rounded shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+          <option>English</option>
+          <option>Hindi</option>
+           <option>Bengali</option>
+            <option>Gujrati</option>
+             <option>Marathi</option>
+        </select>
+      </div>
+
+      <!-- Quick Questions -->
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <button class="bg-gray-800 px-4 py-3 rounded-xl text-left hover:bg-gray-700 transition 
+                       shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+          + What is the last date to pay college fees?
+        </button>
+        <button class="bg-gray-800 px-4 py-3 rounded-xl text-left hover:bg-gray-700 transition 
+                       shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+          + Where can I see my timetable?
+        </button>
+        <button class="bg-gray-800 px-4 py-3 rounded-xl text-left hover:bg-gray-700 transition 
+                       shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+          + How can I apply for a scholarship?
+        </button>
+        <button class="bg-gray-800 px-4 py-3 rounded-xl text-left hover:bg-gray-700 transition 
+                       shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+          + Where can I download the bonafide form?
+        </button>
+      </div>
+
+      <!-- Input Box -->
+      <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 shadow-[0_0_25px_rgba(168,85,247,0.6)]">
+        <input type="text" placeholder="Ask your query . . ." 
+               class="bg-transparent flex-grow outline-none text-white placeholder-gray-400" />
+        <button class="text-purple-400 hover:text-purple-500 drop-shadow-[0_0_20px_rgba(168,85,247,0.9)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
